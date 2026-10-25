@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      Fitness App
-    </title>
+    <title>Fitness App</title>
+    <link rel="stylesheet" 
+    href="style.css">
   </head>
   <body>
     <h1>Welcome to fitness App</h1>
     <p>Your journey starts here!</p>
     <button>Get Started</button>
+    <p id="message"></p>
+    <script>
+      const button = 
+      document.querySelector("button");
+      const message =
+      document.getElementById("message");
+
+      button.addEventListener("click",
+      function() {
+               message.textContent =
+        "Welcome! Let's start your fitness journey.";
+      });
+    </script>
   </body>
 </html>
